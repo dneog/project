@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+</head>
+<body>
+    <form id="form" action="">
+        <label for="">Selling Price : </label>
+        <input type="number" name="price" id="price" autocomplete="off">
+        <label for="">Product Name :</label>
+        <input type="text" name="name" id="name" autocomplete="off">
+        <select name="select" id="select">
+            <option value="Electronic Items">Electronic Items</option>
+            <option value="Food Items">Food Items</option>
+            <option value="Skincare Items">Skincare Items</option>
+        </select>
+        <input type="submit" id="submit" value="Add Product">
+    </form>
+    <h2>Products</h2>
+    <div id="electronic">
+        <h3>Electronic Items</h3>
+    <ul id="list1"></ul>
+    </div>
+    <div id="food">
+        <h3>Food Items</h3>
+    <ul id="list2"></ul>
+    </div>
+    <h3>Skincare Items</h3>
+    <div id="skincare">
+       
+    <ul id="list3"></ul>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
